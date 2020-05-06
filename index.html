@@ -9,50 +9,47 @@
 </head>
 <body>
  
-<!-- nav bar -->    
-<div id="navbar">
-  <ul>
-    <li class="back-button">
-      <i class="fa fa-arrow-left" aria-hidden="true"></i>
-    </li>
-    <li class="navHeader">
-      <p>DEVHINTS.IO</p>
-    </li>
-    <li class="socialIcons">
-      <i class="fa fa-facebook-official" aria-hidden="true"></i>
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </li>
-  </ul>
-
-  <!-- <div class="back-button">
-    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+<!-- NAV BAR -->    
+<div id="navbar-container">
+  <div class="navbar-column-1">
+      <div class="backButton">
+        <svg id="arrowVector" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="rgb(51,68,85)" d="M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.7H427v-42.75z"/></svg>
+        <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i> -->
+      </div>
   </div>
-
-  <p class="navHeader">DEVHINTS.IO</p>
-
-  <div class="socialIcons">
-    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-    <i class="fa fa-twitter" aria-hidden="true"></i>
-  </div>   -->
-</div>
-
+  <div class="navbar-column-2">
+    <!-- <div class="navHeader"> -->
+      <p class="navHeader-text"><a href="https://devhints.io/">DEVHINTS.IO</a></p>
+    <!-- </div> -->
+  </div>
+  <div class="navbar-column-3">
+    <div class="socialIcon-1">
+        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+    </div>
+    <div class="socialIcon-2">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+  </div>          
+</div>  
+  
 <!-- header -->
 <div class="container"> 
 
 <h1>Rico's cheatsheets</h1>
     
 <div id="intro">
-  <p>Hey! I'm <a href="https://ricostacruz.com/" target="blank">@rstacruz</a> and this is a modest collection of cheatsheets I've written.</p>
+  <p class="intro-text">Hey! I'm <a href="https://ricostacruz.com/" target="blank">@rstacruz</a> and this is a modest collection of cheatsheets I've written.</p>
 </div>  
 
-<!-- search bar -->
+<!-- SEARCH BAR -->
 
 <div id="searchBar">
   <form>
       <span class="prefix">devhints.io</span>
-      <span class="prefix">/</span>
-      <input type="text"  placeholder="Search...">
+      <span class="slash">/</span>
+      <input type="text" id="search" placeholder="Search...">
   </form>
+  <svg id="searchVector" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="rgb(17,17,17)" d="M337.51 305.372h-17.502l-6.57-5.486c20.79-25.232 33.92-57.054 33.92-93.257C347.36 127.63 283.897 64 205.136 64 127.452 64 64 127.632 64 206.63s63.452 142.627 142.225 142.627c35.01 0 67.83-13.167 92.99-34.008l6.562 5.486v17.55L415.18 448 448 415.086 337.51 305.372zm-131.285 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.86 43.76-98.743 98.463-98.743 54.7 0 98.462 43.884 98.462 98.742 0 54.855-43.762 98.742-98.462 98.742z"/></svg>
 </div>
 
 <!-- sponsor info -->
@@ -62,136 +59,134 @@
         <p class="sponsorText-3"><i>ethical</i> ad by CodeFund</p>
     </div>
 
-<!-- boxes -->
+<!-- FLOATING BOXES  -->
 <div id="box-container">
-
-  
-    <!-- <div class="box">
-      <p>1</p>
+ 
+<!-- TOP ROW   -->
+  <div class="box-list">
+    <div class="box-column-1">
+      <p class="box-font">bash <span class="dot"></span></p>
+    </div>  
+    <div class="box-column-2">
+      <p class="box-font">enzyme <span class="dot"></span></p>        
     </div>
-    <div class="box">
-      <p>2</p>
+    <div class="box-column-1">
+      <p class="box-font">es6 <span class="dot"></span></p>
+    </div>  
+    <div class="box-column-2">
+      <p class="box-font">go <span class="dot"></span></p>     
     </div>
-  
-    <div class="box">
-      <p>3</p>
-    </div>
-    
-    <div class="box">
-      <p>4</p>
-    </div>
-  
-
-    <div class="box"> 
-      <p>5</p>
-    </div>
-    <div class="box">
-      <p>6</p>
-    </div>
-     
-    <div class="box">
-      <p>7</p>
-    </div>
-    <div class="box">
-      <p>8</p>
-    </div> -->
-
-
-  <div class="row">
-      <div class="box">
-        <p>1</p>
-      </div>
-      <div class="box">
-        <p>2</p>
-      </div>
-  </div>    
-  <div class="row">    
-      <div class="box">
-        <p>3</p>
-      </div>
-      <div class="box">
-        <p>4</p>
-      </div>
-  </div>    
-
-  <div class="row">
-      <div class="box"> 
-        <p>5</p>
-      </div>
-      <div class="box">
-        <p>6</p>
-      </div>
-  </div>    
-  <div class="row">       
-      <div class="box">
-        <p>7</p>
-      </div>
-      <div class="box">
-        <p>8</p>
-      </div>
   </div>
+
+<!-- BOTTOM ROW   -->
+<div class="box-list">
+  <div class="box-column-1">
+    <p class="box-font">react <span class="dot"></span></p>
+  </div>  
+  <div class="box-column-2">
+    <p class="box-font">sass <span class="dot"></span></p>        
+  </div>
+  <div class="box-column-1">
+    <p class="box-font">vim <span class="dot"></span></p>
+  </div>  
+  <div class="box-column-2">
+    <p class="box-font">xpath <span class="dot"></span></p>        
+  </div>
+</div>  
+<!-- "box-container" div  -->
 </div>
+  
+   
+<!-- LISTS -->
 
-<!-- lists -->
+<div class="list-container">
 
-    <div class="list-container">
-      <h4>Recently updated</h4>
-      <hr>
-      <!-- list -->
-      <div class="list-1">
+<!-- list 1--> 
+      <div class="list-header">    
+      <h4>Recently updated <hr class="break"></h4>
+      </div>
+      
+      <div class="list">
       <div class="column-1">
-        <p>top</p>
-        <p>regexp</p>
-        <p>find</p>
-        <p>scp</p>
-        <p>mysql</p>
-        <p>kotlin</p>
-        <p>csharp7</p>
-        <p>emmet</p>
-        <p>vim</p>
+        <p>top <span class="dot"></span></p>
+        <p>regexp <span class="dot"></span></p>
+        <p>find <span class="dot"></span></p>
+        <p>scp <span class="dot"></span></p>
+        <p>mysql <span class="dot"></span></p>
+        <p>kotlin <span class="dot"></span></p>
+        <p>csharp7 <span class="dot"></span></p>
+        <p>emmet <span class="dot"></span></p>
+        <p>vim <span class="dot"></span></p>
       </div>  
       <div class="column-2">
-        <p>vue</p>
-        <p>bash</p>
-        <p>jsdoc</p>
-        <p>rest-api</p>
-        <p>bolt</p>
-        <p>css-grid</p>
-        <p>bulma</p>
-        <p>react</p>
-        <p>semver</p>
+        <p>vue <span class="dot"></span></p>
+        <p>bash <span class="dot"></span></p>
+        <p>jsdoc <span class="dot"></span></p>
+        <p>rest-api <span class="dot"></span></p>
+        <p>bolt <span class="dot"></span></p>
+        <p>css-grid <span class="dot"></span></p>
+        <p>bulma <span class="dot"></span></p>
+        <p>react <span class="dot"></span></p>
+        <p>semver <span class="dot"></span></p>
       </div>
     </div>
-    
 
-    <div class="list-container">  
-      <h4>Analytics</h4>
-      <hr>
-      <!-- list -->  
-        <p>analytics.js</p><p>analytics</p>
-        <p>mixpanel</p>
+<!-- list 2-->
+  <div class="list-header">    
+    <h4>Analytics <hr class="break"></h4>
     </div>
 
-    <div class="list-container">   
-      <h4>Ansible</h4>
-      <hr>
-      <!-- list -->  
-        <p>ansible-examples</p><p>ansible-guide</p>
-        <p>ansible-modules</p><p>ansible-roles</p>
-        <p>ansible</p>
-  
-  <div class="list-container">  
-      <h4>Apps</h4>
-      <hr>
-      <!-- list -->  
-        <p>atom</p><p>editorconfig</p>
-        <p>flashlight</p><p>inkscape</p>
-        <p>org-mode</p><p>sketch</p>
-        <p>spacemacs</p><p>sublime-text</p>
-        <p>vscode</p><p>weechat</p>
-  </div>
+      <div class="list">
+      <div class="column-1">
+        <p>analytics.js <span class="dot"></span></p>
+        <p>mixpanel <span class="dot"></span></p>
+      </div>  
+      <div class="column-2">
+        <p>analytics <span class="dot"></span></p>        
+      </div>
+    </div>
 
-</div>
+<!-- list 3-->    
+  <div class="list-header">    
+    <h4>Ansible <hr class="break"></h4>
+    </div>
+
+      <div class="list">
+      <div class="column-1">
+        <p>ansible-examples <span class="dot"></span></p>
+        <p>ansible-modules <span class="dot"></span></p>
+        <p>ansible <span class="dot"></span></p>
+      </div>  
+      <div class="column-2">
+        <p>ansible-guide <span class="dot"></span></p>
+        <p>ansible-roles <span class="dot"></span></p>       
+      </div>
+    </div>
+
+<!-- list 4-->
+  <div class="list-header">    
+    <h4>Apps <hr class="break"></h4>
+    </div>
+
+    <div class="list">
+      <div class="column-1">
+        <p>atom <span class="dot"></span></p>
+        <p>flashlight <span class="dot"></span></p>
+        <p>org-mode <span class="dot"></span></p>
+        <p>spacemacs <span class="dot"></span></p>
+        <p>vscode <span class="dot"></span></p>
+      </div>  
+      <div class="column-2">
+        <p>editorconfig <span class="dot"></span></p>
+        <p>inkscape <span class="dot"></span></p>
+        <p>sketch <span class="dot"></span></p>
+        <p>sublime-text <span class="dot"></span></p>
+        <p>weechat <span class="dot"></span></p>
+      </div>
+    </div>
+
+<!-- "list-container" div -->
+</div> 
 
 
 <script></script>
