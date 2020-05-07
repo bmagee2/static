@@ -13,32 +13,33 @@
 <div id="navbar-container">
   <div class="navbar-column-1">
       <div class="backButton">
-        <svg id="arrowVector" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="rgb(51,68,85)" d="M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.7H427v-42.75z"/></svg>
+        <a id="navLink" href="https://devhints.io/"><svg id="arrowVector" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="rgb(51,68,85)" d="M427 234.625H167.296l119.702-119.702L256 85 85 256l171 171 29.922-29.924-118.626-119.7H427v-42.75z"/></svg></a>
         <!-- <i class="fa fa-arrow-left" aria-hidden="true"></i> -->
       </div>
   </div>
   <div class="navbar-column-2">
     <!-- <div class="navHeader"> -->
-      <p class="navHeader-text"><a href="https://devhints.io/">DEVHINTS.IO</a></p>
+      <p class="navHeader-text"><a id="navLink" href="https://devhints.io/">DEVHINTS.IO</a></p>
     <!-- </div> -->
   </div>
   <div class="navbar-column-3">
     <div class="socialIcon-1">
-        <i class="fa fa-facebook-official" aria-hidden="true"></i>
+      <abbr class="tool-tip-icon-1"><a href="https://www.facebook.com/sharer/sharer.php?u=https://devhints.io/" target="share"><span class="text"></span><i class="fa fa-facebook-official" aria-hidden="true"></i></a><span class="tool-tip-text">Share on Facebook</span></abbr>
     </div>
     <div class="socialIcon-2">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
+      <abbr class="tool-tip-icon-2"><a href="https://twitter.com/intent/tweet?text=Ridiculous%20collection%20of%20web%20development%20cheatsheets%20https://devhints.io/" target="share"><span class="text"></span><i class="fa fa-twitter" aria-hidden="true"></i>
+      </a><span class="tool-tip-text">Share on Twitter</span></abbr>
     </div>
   </div>          
 </div>  
   
-<!-- header -->
+<!-- HEADER -->
 <div class="container"> 
 
 <h1>Rico's cheatsheets</h1>
     
 <div id="intro">
-  <p class="intro-text">Hey! I'm <a href="https://ricostacruz.com/" target="blank">@rstacruz</a> and this is a modest collection of cheatsheets I've written.</p>
+  <p class="intro-text">Hey! I'm <a id="intro-link" href="https://ricostacruz.com/" target="blank">@rstacruz</a> and this is a modest collection of cheatsheets I've written.</p>
 </div>  
 
 <!-- SEARCH BAR -->
@@ -47,16 +48,17 @@
   <form>
       <span class="prefix">devhints.io</span>
       <span class="slash">/</span>
+      <!-- <span class="blinking-cursor">|</span> -->
       <input type="text" id="search" placeholder="Search...">
   </form>
   <svg id="searchVector" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512"><path fill="rgb(17,17,17)" d="M337.51 305.372h-17.502l-6.57-5.486c20.79-25.232 33.92-57.054 33.92-93.257C347.36 127.63 283.897 64 205.136 64 127.452 64 64 127.632 64 206.63s63.452 142.627 142.225 142.627c35.01 0 67.83-13.167 92.99-34.008l6.562 5.486v17.55L415.18 448 448 415.086 337.51 305.372zm-131.285 0c-54.702 0-98.463-43.887-98.463-98.743 0-54.86 43.76-98.743 98.463-98.743 54.7 0 98.462 43.884 98.462 98.742 0 54.855-43.762 98.742-98.462 98.742z"/></svg>
 </div>
 
-<!-- sponsor info -->
+<!-- SPONSOR INFO -->
     <div id="sponsorInfo">
         <p class="sponsorText-1">- Proudly sponsored by -</p>
-        <p class="sponsorText-2"> Segment Send data to any tool without having to implement a new API every time.</p>
-        <p class="sponsorText-3"><i>ethical</i> ad by CodeFund</p>
+        <p class="sponsorText-2"><a href="#" target="blank"><b>Segment Send</b> data to any tool without having to implement a new API every time.</p></a>
+        <p class="sponsorText-3"><a href="https://codefund.io/" target="blank"><i>ethical</i> ad by CodeFund</p></a>
     </div>
 
 <!-- FLOATING BOXES  -->
@@ -65,35 +67,43 @@
 <!-- TOP ROW   -->
   <div class="box-list">
     <div class="box-column-1">
-      <p class="box-font">bash <span class="dot"></span></p>
+      <a href="https://devhints.io/bash" target="black"><p class="box-font">bash <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+      </abbr>
     </div>  
     <div class="box-column-2">
-      <p class="box-font">enzyme <span class="dot"></span></p>        
+      <a href="https://devhints.io/enzyme" target="black"><p class="box-font">enzyme <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a> 
+      </abbr>       
     </div>
-    <div class="box-column-1">
-      <p class="box-font">es6 <span class="dot"></span></p>
+    <div class="box-column-3">
+      <a href="https://devhints.io/es6" target="black"><p class="box-font">es6 <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+      </abbr>
     </div>  
-    <div class="box-column-2">
-      <p class="box-font">go <span class="dot"></span></p>     
+    <div class="box-column-1">
+      <a href="https://devhints.io/go" target="black"><p class="box-font">go <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+      </abbr>    
     </div>
   </div>
 
 <!-- BOTTOM ROW   -->
 <div class="box-list">
-  <div class="box-column-1">
-    <p class="box-font">react <span class="dot"></span></p>
-  </div>  
   <div class="box-column-2">
-    <p class="box-font">sass <span class="dot"></span></p>        
+    <a href="https://devhints.io/react" target="black"><p class="box-font">react <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+    </abbr>
+  </div>  
+  <div class="box-column-3">
+    <a href="https://devhints.io/sass" target="black"><p class="box-font">sass <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+    </abbr>        
   </div>
   <div class="box-column-1">
-    <p class="box-font">vim <span class="dot"></span></p>
+    <a href="https://devhints.io/vim" target="black"><p class="box-font">vim <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+    </abbr>
   </div>  
   <div class="box-column-2">
-    <p class="box-font">xpath <span class="dot"></span></p>        
+    <a href="https://devhints.io/xpath" target="black"><p class="box-font">xpath <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+    </abbr>        
   </div>
-</div>  
-<!-- "box-container" div  -->
+</div>   
+<!-- "box-container" div -->
 </div>
   
    
@@ -108,26 +118,44 @@
       
       <div class="list">
       <div class="column-1">
-        <p>top <span class="dot"></span></p>
-        <p>regexp <span class="dot"></span></p>
-        <p>find <span class="dot"></span></p>
-        <p>scp <span class="dot"></span></p>
-        <p>mysql <span class="dot"></span></p>
-        <p>kotlin <span class="dot"></span></p>
-        <p>csharp7 <span class="dot"></span></p>
-        <p>emmet <span class="dot"></span></p>
-        <p>vim <span class="dot"></span></p>
+        <a href="https://devhints.io/top" target="black"><p>top <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/regexp" target="black"><p>regexp <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/find" target="black"><p>find <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/scp" target="black"><p>scp <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/mysql" target="black"><p>mysql <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/kotlin" target="black"><p>kotlin <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/csharp7" target="black"><p>csharp7 <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/emmet" target="black"><p>emmet <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/vim" target="black"><p>vim <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>  
       <div class="column-2">
-        <p>vue <span class="dot"></span></p>
-        <p>bash <span class="dot"></span></p>
-        <p>jsdoc <span class="dot"></span></p>
-        <p>rest-api <span class="dot"></span></p>
-        <p>bolt <span class="dot"></span></p>
-        <p>css-grid <span class="dot"></span></p>
-        <p>bulma <span class="dot"></span></p>
-        <p>react <span class="dot"></span></p>
-        <p>semver <span class="dot"></span></p>
+        <a href="https://devhints.io/vue" target="black"><p>vue <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/bash" target="black"><p>bash <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/jsdoc" target="black"><p>jsdoc <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/rest-api" target="black"><p>rest-api <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/bolt" target="black"><p>bolt <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/css-grid" target="black"><p>css-grid <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/bulma" target="black"><p>bulma <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/react" target="black"><p>react <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/semver" target="black"><p>semver <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>
     </div>
 
@@ -138,11 +166,14 @@
 
       <div class="list">
       <div class="column-1">
-        <p>analytics.js <span class="dot"></span></p>
-        <p>mixpanel <span class="dot"></span></p>
+        <a href="https://devhints.io/analytics.js" target="black"><p>analytics.js <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/mixpanel" target="black"><p>mixpanel <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>  
       <div class="column-2">
-        <p>analytics <span class="dot"></span></p>        
+        <a href="https://devhints.io/analytics" target="black"><p>analytics <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>       
       </div>
     </div>
 
@@ -153,13 +184,18 @@
 
       <div class="list">
       <div class="column-1">
-        <p>ansible-examples <span class="dot"></span></p>
-        <p>ansible-modules <span class="dot"></span></p>
-        <p>ansible <span class="dot"></span></p>
+        <a href="https://devhints.io/ansible-examples" target="black"><p>ansible-examples <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/ansible-modules" target="black"><p>ansible-modules <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/ansible" target="black"><p>ansible <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>  
       <div class="column-2">
-        <p>ansible-guide <span class="dot"></span></p>
-        <p>ansible-roles <span class="dot"></span></p>       
+        <a href="https://devhints.io/ansible-guides" target="black"><p>ansible-guides <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/ansible-roles" target="black"><p>ansible-roles <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>    
       </div>
     </div>
 
@@ -170,18 +206,28 @@
 
     <div class="list">
       <div class="column-1">
-        <p>atom <span class="dot"></span></p>
-        <p>flashlight <span class="dot"></span></p>
-        <p>org-mode <span class="dot"></span></p>
-        <p>spacemacs <span class="dot"></span></p>
-        <p>vscode <span class="dot"></span></p>
+        <a href="https://devhints.io/atom" target="black"><p>atom <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/flashlight" target="black"><p>flashlight <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/org-mode" target="black"><p>org-mode <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/spacemacs" target="black"><p>spacemacs <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/vscode" target="black"><p>vscode <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>  
       <div class="column-2">
-        <p>editorconfig <span class="dot"></span></p>
-        <p>inkscape <span class="dot"></span></p>
-        <p>sketch <span class="dot"></span></p>
-        <p>sublime-text <span class="dot"></span></p>
-        <p>weechat <span class="dot"></span></p>
+        <a href="https://devhints.io/editorconfig" target="black"><p>editorconfig <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/inkscape" target="black"><p>inkscape <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/sketch" target="black"><p>sketch <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/sublime-text" target="black"><p>sublime-text <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
+        <a href="https://devhints.io/weechat" target="black"><p>weechat <abbr class="tool-tip"><span class="tool-tip-text">New layout!</span></p></a>
+        </abbr>
       </div>
     </div>
 
